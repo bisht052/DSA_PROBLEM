@@ -4,6 +4,7 @@ class MoveZerov2{
 		 moveZeroToEnd(arr);
 		     for(int i=0;i<arr.length;i++){
 			 System.out.print(arr[i]+" ");
+				 System.out.println("Remote change");
 		}
 	}
 		 static void  moveZeroToEnd(int [] arr) {
