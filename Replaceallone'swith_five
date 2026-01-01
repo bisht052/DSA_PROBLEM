@@ -1,0 +1,26 @@
+class Replaceallone'swith_five{
+	public static void main(String[] args) {
+		int num=1004;
+		int getRes= convertfive(num);
+		System.out.println(getRes);
+}
+  static int convertfive(int num) {
+        if(num==0)
+          return 5;      
+        int rev = 0;   
+        while(num>0){
+            int digit=num%10;
+            if(digit==0){
+                digit=5;
+            }
+            rev= rev*10+digit;
+            num=num/10;
+        }
+     int ans = 0;
+        while (rev > 0) {
+            ans = ans * 10 + (rev % 10);
+            rev = rev / 10;
+        }
+        return ans;
+    }
+}
